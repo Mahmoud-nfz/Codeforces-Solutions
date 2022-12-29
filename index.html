@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Codeforces Solution Finder</title>
+    <link rel="icon" type="image/x-icon" href="__website_assets/favicon.ico">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <!--Replace with your tailwind.css once created-->
+    <link href="https://unpkg.com/@tailwindcss/custom-forms/dist/custom-forms.min.css" rel="stylesheet" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+      html {
+        font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      }
+    </style>
+  </head>
+
+  <body class="leading-normal tracking-normal text-indigo-400 m-6 bg-cover bg-fixed" style="background-image: url('__website_assets/header.png');">
+    <div id="main-container" class="h-full">
+      <!--Nav-->
+      <div class="w-full container mx-auto">
+        <div class="w-full flex items-center justify-between">
+          <a class="flex items-center text-indigo-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
+            CF-Sol<span class="bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500">finder</span>
+          </a>
+
+          <div class="flex w-1/2 justify-end content-center">
+            <a class="inline-block text-blue-300 no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+              href="https://github.com/Mahmoud-nfz"
+            >
+              <svg class="fill-current h-8" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path fill-rule="evenodd" d="M8 1C4.133 1 1 4.13 1 7.993c0 3.09 2.006 5.71 4.787 6.635.35.064.478-.152.478-.337 0-.166-.006-.606-.01-1.19-1.947.423-2.357-.937-2.357-.937-.319-.808-.778-1.023-.778-1.023-.635-.434.048-.425.048-.425.703.05 1.073.72 1.073.72.624 1.07 1.638.76 2.037.582.063-.452.244-.76.444-.935-1.554-.176-3.188-.776-3.188-3.456 0-.763.273-1.388.72-1.876-.072-.177-.312-.888.07-1.85 0 0 .586-.189 1.924.716A6.711 6.711 0 018 4.381c.595.003 1.194.08 1.753.236 1.336-.905 1.923-.717 1.923-.717.382.963.142 1.674.07 1.85.448.49.72 1.114.72 1.877 0 2.686-1.638 3.278-3.197 3.45.251.216.475.643.475 1.296 0 .934-.009 1.688-.009 1.918 0 .187.127.404.482.336A6.996 6.996 0 0015 7.993 6.997 6.997 0 008 1z" clip-rule="evenodd"/></svg>
+            </a>
+            <a
+              class="inline-block text-blue-300 no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+              href="https://www.linkedin.com/in/mahmoud-nefzi"
+            >
+            <svg class="fill-current h-8" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M12.225 12.225h-1.778V9.44c0-.664-.012-1.519-.925-1.519-.926 0-1.068.724-1.068 1.47v2.834H6.676V6.498h1.707v.783h.024c.348-.594.996-.95 1.684-.925 1.802 0 2.135 1.185 2.135 2.728l-.001 3.14zM4.67 5.715a1.037 1.037 0 01-1.032-1.031c0-.566.466-1.032 1.032-1.032.566 0 1.031.466 1.032 1.032 0 .566-.466 1.032-1.032 1.032zm.889 6.51h-1.78V6.498h1.78v5.727zM13.11 2H2.885A.88.88 0 002 2.866v10.268a.88.88 0 00.885.866h10.226a.882.882 0 00.889-.866V2.865a.88.88 0 00-.889-.864z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!--Main-->
+      <div class="container pt-24 md:pt-36 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+        <!--Left Col-->
+        <div class="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
+          <h1 class="my-4 text-3xl md:text-5xl text-white opacity-75 font-bold leading-tight text-center md:text-left">
+            Enter
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500">
+              The problem's code name
+            </span>
+            .
+          </h1>
+          <p class="leading-normal text-base md:text-2xl mb-8 text-center md:text-left">
+            Example : 157B
+          </p>
+
+          <form class="bg-gray-900 opacity-75 w-full shadow-lg rounded-lg px-8 pt-6 pb-8 mb-4">
+            <div class="mb-4">
+              <label class="block text-blue-300 py-2 font-bold mb-2" for="emailaddress">
+                Problem Code Name
+              </label>
+              <input
+                class="shadow appearance-none border rounded w-full p-3 text-gray-700 leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
+                id="problem"
+                type="text"
+                placeholder="431A"
+              />
+            </div>
+
+            <div class="flex items-center justify-between pt-4">
+              <button
+                onclick="search()"
+                class="bg-gradient-to-r from-purple-800 to-green-500 hover:from-pink-500 hover:to-green-500 text-white font-bold py-2 px-4 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
+                type="button"
+              >
+                Find
+              </button>
+              <span id="searchError"></span>
+            </div>
+          </form>
+        </div>
+
+        <!--Right Col-->
+        <div class="w-full xl:w-3/5 p-12 overflow-hidden">
+          <img class="mx-auto w-full md:w-4/5 transform -rotate-6 transition hover:scale-105 duration-700 ease-in-out hover:rotate-6" src="__website_assets/terminal_prompt.svg" />
+        </div>
+
+      </div>
+    </div>
+
+    
+    <!-- Preview modal -->
+    <div class="preview-modal p-5 z-100 hidden fixed w-full h-screen max-h-screen inset-0 flex justify-center items-center animated fadeIn faster"
+        style="background: rgba(0,0,0,.7);">
+        <div class="m-5 p-5 z-100 h-full max-h-screen w-auto flex fixed transition-transform duration-300 ease-soft-out">
+            <div class="overflow-auto flex w-full border border-solid bg-clip-padding border-black/20 rounded-xl outline-0" style="background: #1f212c;">
+                <div class="flex flex-col m-5">
+                  <div class="flex items-center justify-between p-4 border-b border-solid shrink-0 border-slate-100 rounded-t-xl">
+                    <h5 id="problemTitle0" class="mb-0 leading-normal font-bold"></h5>
+                    <div class="preview-modal-close cursor-pointer z-100 w-5 h-5 ml-auto box-content p-2 border-0 rounded-1.5 cursor-pointer text-white" data-dismiss="preview-modal">
+                      <svg class="h-full fill-current" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="m7.53033 6.46967c-.29289-.29289-.76777-.29289-1.06066 0s-.29289.76777 0 1.06066l4.46963 4.46967-4.46963 4.4697c-.29289.2929-.29289.7677 0 1.0606s.76777.2929 1.06066 0l4.46967-4.4696 4.4697 4.4696c.2929.2929.7677.2929 1.0606 0s.2929-.7677 0-1.0606l-4.4696-4.4697 4.4696-4.46967c.2929-.29289.2929-.76777 0-1.06066s-.7677-.29289-1.0606 0l-4.4697 4.46963z" fill-rule="evenodd"/></svg>
+                    </div>
+                  </div>
+                  <div class="flex flex-col text-2xl font-bold text-center my-3" >
+                    <h1 id="problemTitle"></h1>
+                    <div class="cursor-pointer flex" onclick="copyCode()">
+                      <svg class="h-6 text-white fill-current" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 9C9.44771 9 9 9.44771 9 10V21C9 21.5523 9.44771 22 10 22H21C21.5523 22 22 21.5523 22 21V10C22 9.44771 21.5523 9 21 9H10ZM15 7V3C15 2.44772 14.5523 2 14 2H3C2.44772 2 2 2.44772 2 3V14C2 14.5523 2.44772 15 3 15H7V10C7 8.34315 8.34315 7 10 7H15ZM17 7H21C22.6569 7 24 8.34315 24 10V21C24 22.6569 22.6569 24 21 24H10C8.34315 24 7 22.6569 7 21V17H3C1.34315 17 0 15.6569 0 14V3C0 1.34315 1.34315 0 3 0H14C15.6569 0 17 1.34315 17 3V7Z"/></svg>
+                      <span class="mx-2 font-md text-sm text-white">Copy code</span>
+                    </div>
+                  </div>
+                  
+                  <h3 class="my-2"><span id="status"></span></h3>
+                  <div class="relative h-fit text-left p-4 overflow-auto rounded-md" style="background-color: #2f334a">
+                    <code id="code" class="text-white" style="white-space: pre;"></code>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- End previewModal -->
+
+  </body>
+
+  <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+  <script>
+    // detect form submit
+    const form = document.querySelector('form');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      search();
+    });
+    const previewModal = document.querySelector(".preview-modal")
+    const closePreviewButton = document.querySelectorAll('.preview-modal-close');
+    const openPreviewModal = (problem,code) => {
+      $("#problemTitle0").text(problem);
+      $("#problemTitle").text(problem);
+      // replace tags with unicode
+      code = code.replace(/</g, "&lt;");
+      code = code.replace(/>/g, "&gt;");
+      $("#code").html(code);
+      
+
+      previewModal.classList.remove('fadeOut');
+      previewModal.classList.add('fadeIn');
+      previewModal.style.display = 'flex';
+      // set blur to all elements
+      $("#main-container").addClass('blur');
+    }
+    const closePreviewModal = () => {
+      previewModal.classList.remove('fadeIn');
+      previewModal.classList.add('fadeOut');
+      previewModal.style.display = 'none';
+      $("#main-container").removeClass('blur');
+    }
+    for (let i = 0; i < closePreviewButton.length; i++) {
+        const elements = closePreviewButton[i];
+        elements.onclick = (e) => closePreviewModal();
+        window.onclick = function (event) {
+            if (event.target == previewModal) closePreviewModal();
+        }
+    }
+    </script>
+
+  <script>
+    function search() {
+      var problem = document.getElementById("problem").value;
+      var url = "https://raw.githubusercontent.com/Mahmoud-nfz/Codeforces-Solutions/main/_All%20Solutions/"+problem+".cpp";
+      var method = "GET";
+      var data = {
+        tags: problem,
+      };
+      var onSuccessAjaxCall = function (data) {
+        console.log("done");
+      };
+      $.ajax({
+        type: method,
+        url: url,
+        data: data,
+        success : function(data) {
+          console.log(data);
+          document.getElementById("searchError").innerHTML = "YES";
+          openPreviewModal(problem,data);
+        },
+        error : function(data) {
+          console.log(data);
+          document.getElementById("searchError").innerHTML = "No available solution in this repository";
+          // add class "error" to
+          $("#problem").addClass("text-red-800");
+        }
+      }).done(onSuccessAjaxCall);
+    }
+    
+    function copyCode() {
+      var copyText = document.getElementById("code");
+      // copy from div to clipboard
+      navigator.clipboard.writeText(copyText.innerText);
+    }
+  </script>
+</html>
